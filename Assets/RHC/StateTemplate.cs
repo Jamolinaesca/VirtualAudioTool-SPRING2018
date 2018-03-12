@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class State
+public abstract class StateRHC
 {
     protected RightHand controller;
 
@@ -10,7 +10,7 @@ public abstract class State
     public virtual void OnStateEnter() { }
     public virtual void OnStateExit() { }
 
-    public State(RightHand state)
+    public StateRHC(RightHand state)
     {
         this.controller = state;
     }

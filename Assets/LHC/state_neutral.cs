@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class neutral : State {
+public class neutral : StateLHC {
 
     public neutral(LeftHand controller) : base(controller) {
     }

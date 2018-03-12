@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LeftHand : MonoBehaviour {
-    private State currentState;
+    private StateLHC currentState;
 
     SteamVR_TrackedObject tracked_lefthand;
 
-    public GameObject controller;
+    public GameObject menu;
 
     private void Start () {
         SetState(new neutral(this));
@@ -15,10 +15,10 @@ public class LeftHand : MonoBehaviour {
     }
 
 	private void Update () {
-        currentState.Tick(tracked_lefthand);
+        currentState.Tick(tracked_lefthand, menu);
 	}
 
-    public void SetState(State state) {
+    public void SetState(StateLHC state) {
         if (currentState != null)
             currentState.OnStateExit();
 

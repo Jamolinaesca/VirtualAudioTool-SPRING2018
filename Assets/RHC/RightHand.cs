@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RightHand : MonoBehaviour
 {
-    public State currentState;
+    public StateRHC currentState;
 
     SteamVR_TrackedObject trackedObj;
     SteamVR_Controller.Device rightHand;
@@ -23,7 +23,7 @@ public class RightHand : MonoBehaviour
         currentState.Tick(trackedObj, rightHand, hand, mic);
 	}
 
-    public void SetState(State state)
+    public void SetState(StateRHC state)
     {
         if (currentState != null)
             currentState.OnStateExit();

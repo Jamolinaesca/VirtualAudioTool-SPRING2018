@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class recording : State {
+public class recording : StateLHC {
 
     public recording(LeftHand controller) : base(controller) {
     }

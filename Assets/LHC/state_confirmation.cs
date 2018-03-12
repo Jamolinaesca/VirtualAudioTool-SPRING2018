@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class confirmation : State {
+public class confirmation : StateLHC {
 
     public confirmation(LeftHand controller) : base(controller) {
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class defaultState : State
+public class defaultState : StateRHC
 {
     public static defaultState instance;
 
